@@ -1,0 +1,277 @@
+/* General styles */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Impede o overflow horizontal */
+  }
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #2b2b2b;
+    color: white;
+    box-sizing: border-box;
+  }
+  
+  .video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background-color: #2B2B2B;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Header styles */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: #2b2b2b;
+    border-bottom: 1px solid #3C3C3C;
+    box-sizing: border-box;
+    
+  }
+  
+  .header-left {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .header-right a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: 1px solid #3C3C3C;
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .header-right a:hover {
+    background-color: #6F4CFF;
+    color: white;
+  }
+  
+  /* Hero section styles */
+  .hero {
+    margin: 40px 0;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    color: #6F4CFF;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    color: white;
+  }
+  
+  /* Video wrapper styles */
+  .video-wrapper {
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px 0;
+  }
+  
+  .video-wrapper iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* About me section styles */
+  .about-me {
+    margin: 40px 0;
+    width: 80%;
+    max-width: 800px;
+  }
+  
+  .about-me h2 {
+    font-size: 2rem;
+    color: #6F4CFF;
+  }
+  
+  .about-me p {
+    font-size: 1.1rem;
+    color: white;
+    line-height: 1.6;
+  }
+  
+  /* Contact me section styles */
+  .contact-me {
+    margin: 40px 0;
+    width: 80%;
+    max-width: 800px;
+  }
+  
+  .contact-me h2 {
+    font-size: 2rem;
+    color: #6F4CFF;
+  }
+  
+  .contact-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .contact-card {
+    background-color: #1E1E1E;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #3C3C3C;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact-card .icon {
+    font-size: 2rem;
+    color: #6F4CFF;
+  }
+  
+  .contact-card p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: white;
+  }
+
+  .contact-card-b {
+    background-color: #1E1E1E;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #3C3C3C;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .contact-card-b:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact-card-b .icon {
+    font-size: 2rem;
+    color: #6F4CFF;
+  }
+  
+  .contact-card-b p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: white;
+  }
+
+  .mail-font {
+    font-size: 0.8rem !important;
+  }
+  
+  /* Footer styles */
+  .footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #1E1E1E;
+    color: white;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+
+    .header {
+        padding: 20px;
+        align-items: center;
+        margin: 0px auto;
+        width: 100%;
+        box-sizing: border-box;
+        
+        
+        
+      }
+      
+    .header-left {
+        font-size: 1rem;
+        font-weight: 400;
+        color: white;
+        width: 50%;
+    }
+
+    .header-right {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        gap: 10px;
+
+    }
+    .video-wrapper {
+  width: 100%; /* Largura total do contêiner */
+  position: relative; /* Para posicionar o vídeo absolutamente */
+  padding-bottom: 56.25%; /* Aspect ratio 16:9 (9/16 * 100%) */
+  height: 0; /* Altura zero para o contêiner manter a proporção */
+  overflow: hidden; /* Esconde partes do vídeo que excedem o contêiner */
+}
+
+.video-wrapper iframe {
+  position: absolute; /* Posiciona o vídeo dentro do contêiner */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Preenche todo o contêiner, mantendo a proporção */
+}
+  
+    .contact-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contact-card {
+      width: 80%;
+    }
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .hero, .video-wrapper, .about-me, .contact-me {
+    animation: fadeIn 1s ease-in-out;
+  }
